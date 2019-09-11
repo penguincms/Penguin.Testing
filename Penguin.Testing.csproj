@@ -1,32 +1,35 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
-    <PackageProjectUrl>http://www.penguinms.com/Nuget</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/penguincms/Penguin.Testing</PackageProjectUrl>
 	<PackageIconUrl>http://www.penguinms.com/client/images/pg.png</PackageIconUrl>
     <Version>1.1.7</Version>
+	<IncludeSymbols>true</IncludeSymbols>    
+<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
 	<Description>A few small test utilities, most notibly a "Runtime" validator scaffolding intended for performing init validation on debug builds on projects with difficult/impossible to enforce compile time restrictions. Write validation for boot time and be alerted BEFORE your application fails</Description>
   </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <WarningsAsErrors>NU1605, CS1591</WarningsAsErrors>
-    <DocumentationFile>C:\SVN\Framework\Nuget\Penguin.Testing\Penguin.Testing.xml</DocumentationFile>
+    <DocumentationFile>Penguin.Testing.xml</DocumentationFile>
   </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 	<DebugType>full</DebugType>
-      <DocumentationFile>C:\SVN\Framework\Nuget\Penguin.Testing\Penguin.Testing.xml</DocumentationFile>
+      <DocumentationFile>Penguin.Testing.xml</DocumentationFile>
     </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Penguin.Reflection" Version="3.11.0" />
+    <PackageReference Include="Penguin.Reflection" Version="3.15.9" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\License.txt">
+    <None Include="License.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
