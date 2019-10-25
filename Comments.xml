@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Penguin.Testing.Local</name>
+    </assembly>
+    <members>
+        <member name="T:Penguin.Testing.Interfaces.IRuntimeValidator">
+            <summary>
+            And interface required to hook into the runtime validation system
+            </summary>
+        </member>
+        <member name="M:Penguin.Testing.Interfaces.IRuntimeValidator.Validate">
+            <summary>
+            Called when executing or validating tests
+            </summary>
+            <returns>The test results</returns>
+        </member>
+        <member name="T:Penguin.Testing.RuntimeValidation.RuntimeValidator">
+            <summary>
+            Static class used to find and execute runtime validation tests
+            </summary>
+        </member>
+        <member name="M:Penguin.Testing.RuntimeValidation.RuntimeValidator.ExecuteTests">
+            <summary>
+            Finds all runtime validation tests and executes them. Throws an error with the results if unsuccessful.
+            Used to block program execution if tests fail
+            </summary>
+        </member>
+        <member name="M:Penguin.Testing.RuntimeValidation.RuntimeValidator.ValidateTests">
+            <summary>
+            Finds all runtime validation tests and executes them, returning the results
+            </summary>
+            <returns>The test results</returns>
+        </member>
+        <member name="T:Penguin.Testing.RuntimeValidation.ValidationResult">
+            <summary>
+            A class intended on representing a single validation result
+            </summary>
+        </member>
+        <member name="P:Penguin.Testing.RuntimeValidation.ValidationResult.Checked">
+            <summary>
+            The class/type that this test was intended to validate
+            </summary>
+        </member>
+        <member name="P:Penguin.Testing.RuntimeValidation.ValidationResult.Message">
+            <summary>
+            Any message relevant to the test
+            </summary>
+        </member>
+        <member name="P:Penguin.Testing.RuntimeValidation.ValidationResult.Success">
+            <summary>
+            A bool representing whether or not the test was successful
+            </summary>
+        </member>
+        <member name="T:Penguin.Testing.RuntimeValidation.ValidationResults">
+            <summary>
+            A class intended on holding the results of a runtime validation test
+            </summary>
+        </member>
+        <member name="P:Penguin.Testing.RuntimeValidation.ValidationResults.Results">
+            <summary>
+            A list of the individual validation results for this test
+            </summary>
+        </member>
+        <member name="P:Penguin.Testing.RuntimeValidation.ValidationResults.Success">
+            <summary>
+            The overall success of the test
+            </summary>
+        </member>
+        <member name="M:Penguin.Testing.RuntimeValidation.ValidationResults.AddResult(Penguin.Testing.RuntimeValidation.ValidationResult)">
+            <summary>
+            Add a new result to the final result list
+            </summary>
+            <param name="result">The result to add</param>
+        </member>
+        <member name="M:Penguin.Testing.RuntimeValidation.ValidationResults.AddResults(Penguin.Testing.RuntimeValidation.ValidationResults)">
+            <summary>
+            Adds new ValidationResults to the final result list
+            </summary>
+            <param name="results">The results to add</param>
+        </member>
+        <member name="T:Penguin.Testing.TestDefinitionAttribute">
+            <summary>
+            Defines metadata used to help display test results
+            </summary>
+        </member>
+        <member name="P:Penguin.Testing.TestDefinitionAttribute.DisplayName">
+            <summary>
+            The human readable name of the test
+            </summary>
+        </member>
+        <member name="M:Penguin.Testing.TestDefinitionAttribute.#ctor(System.String)">
+            <summary>
+            Creates a new instance of this test definition
+            </summary>
+            <param name="displayName">The human readable name of the test</param>
+        </member>
+        <member name="T:Penguin.Testing.TestResult">
+            <summary>
+            A small class used to hold data returned from unit tests
+            </summary>
+        </member>
+        <member name="P:Penguin.Testing.TestResult.DisplayName">
+            <summary>
+            The display name of the test
+            </summary>
+        </member>
+        <member name="P:Penguin.Testing.TestResult.Exception">
+            <summary>
+            Any exception that caused the test to fail
+            </summary>
+        </member>
+        <member name="P:Penguin.Testing.TestResult.Status">
+            <summary>
+            The end result of the test
+            </summary>
+        </member>
+        <member name="T:Penguin.Testing.TestResultStatus">
+            <summary>
+            The overall result of the test being run
+            </summary>
+        </member>
+    </members>
+</doc>
