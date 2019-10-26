@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Penguin.Testing.Local</name>
+        <name>Penguin.Testing</name>
     </assembly>
     <members>
         <member name="T:Penguin.Testing.Interfaces.IRuntimeValidator">

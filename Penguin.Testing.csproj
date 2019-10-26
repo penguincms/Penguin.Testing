@@ -6,7 +6,7 @@
     <Description>A few small test utilities, most notibly a "Runtime" validator scaffolding intended for performing init validation on debug builds on projects with difficult/impossible to enforce compile time restrictions. Write validation for boot time and be alerted BEFORE your application fails</Description>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Penguin.Reflection" Version="4.0.8" />
+    <PackageReference Include="Penguin.Reflection" Version="4.0.8-63707653241" />
   </ItemGroup>
   <Import Project="Penguin.Projects.Shared\Penguin.Projects.Shared.csproj" />
 </Project>
