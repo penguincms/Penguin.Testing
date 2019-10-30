@@ -8,7 +8,7 @@
     <RootNamespace>Penguin.Testing</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Penguin.Reflection" Version="4.0.9-T9M2XAX" />
+    <PackageReference Include="Penguin.Reflection" Version="4.0.9-T9M3AAF" />
   </ItemGroup>
   <Import Project="Penguin.Projects.Shared\Penguin.Projects.Shared.csproj" />
 </Project>
