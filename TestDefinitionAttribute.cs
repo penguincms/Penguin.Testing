@@ -24,7 +24,7 @@ namespace Penguin.Testing
         /// <param name="displayName">The human readable name of the test</param>
         public TestDefinitionAttribute(string displayName)
         {
-            DisplayName = displayName;
+            this.DisplayName = displayName;
         }
 
         #endregion Constructors
