@@ -9,7 +9,7 @@
     <DocumentationFile>Penguin.Testing.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Penguin.Reflection" Version="5.0.1-TA5WW7O" />
+    <PackageReference Include="Penguin.Reflection" Version="5.0.1-TA99DVY" />
   </ItemGroup>
   <Import Project="Penguin.Projects.Shared\Penguin.Projects.Shared.csproj" />
 </Project>
