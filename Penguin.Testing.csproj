@@ -2,14 +2,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageProjectUrl>https://github.com/penguincms/Penguin.Testing</PackageProjectUrl>
-    <Version>5.0.1</Version>
+    <Version>5.0.5</Version>
     <Description>A few small test utilities, most notibly a "Runtime" validator scaffolding intended for performing init validation on debug builds on projects with difficult/impossible to enforce compile time restrictions. Write validation for boot time and be alerted BEFORE your application fails</Description>
     <AssemblyName>Penguin.Testing</AssemblyName>
     <RootNamespace>Penguin.Testing</RootNamespace>
     <DocumentationFile>Penguin.Testing.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Penguin.Reflection" Version="5.0.2-TADRIFB" />
+    <PackageReference Include="Penguin.Reflection" Version="5.0.4" />
   </ItemGroup>
   <Import Project="Penguin.Projects.Shared\Penguin.Projects.Shared.csproj" />
 </Project>
