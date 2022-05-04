@@ -1,6 +1,4 @@
-﻿using Penguin.Testing.RuntimeValidation;
-
-namespace Penguin.Testing.Interfaces
+﻿namespace Penguin.Testing.RuntimeValidation.Interfaces
 {
     /// <summary>
     /// And interface required to hook into the runtime validation system

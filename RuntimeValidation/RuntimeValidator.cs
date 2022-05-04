@@ -1,5 +1,5 @@
 ﻿using Penguin.Reflection;
-using Penguin.Testing.Interfaces;
+using Penguin.Testing.RuntimeValidation.Interfaces;
 using System;
 using System.Linq;
 

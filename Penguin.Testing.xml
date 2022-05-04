@@ -4,12 +4,12 @@
         <name>Penguin.Testing</name>
     </assembly>
     <members>
-        <member name="T:Penguin.Testing.Interfaces.IRuntimeValidator">
+        <member name="T:Penguin.Testing.RuntimeValidation.Interfaces.IRuntimeValidator">
             <summary>
             And interface required to hook into the runtime validation system
             </summary>
         </member>
-        <member name="M:Penguin.Testing.Interfaces.IRuntimeValidator.Validate">
+        <member name="M:Penguin.Testing.RuntimeValidation.Interfaces.IRuntimeValidator.Validate">
             <summary>
             Called when executing or validating tests
             </summary>
