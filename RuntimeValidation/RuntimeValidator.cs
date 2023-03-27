@@ -35,7 +35,7 @@ namespace Penguin.Testing.RuntimeValidation
         {
             ValidationResults results = new ValidationResults();
 
-            foreach (Type toRun in TypeFactory.GetAllImplementations(typeof(IRuntimeValidator)))
+            foreach (Type toRun in TypeFactory.Default.GetAllImplementations(typeof(IRuntimeValidator)))
             {
                 IRuntimeValidator thisValidator = (IRuntimeValidator)Activator.CreateInstance(toRun);
 
